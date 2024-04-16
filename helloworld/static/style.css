@@ -1,0 +1,449 @@
+@font-face {
+  font-family: Gotham Light;
+  src: url(fonts/Gotham-Light.otf);
+}
+
+@font-face {
+  font-family: Gotham Medium;
+  src: url(fonts/Gotham-Medium.otf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #414a4c;
+}
+
+.welcome_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.welcome_container_title {
+  color: #fff;
+  font-family: Gotham Medium;
+}
+
+.welcome_container_button {
+  width: 300px;
+  padding: 15px 0;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  background: #57756d;
+  color: #fff;
+  font-family: Gotham Medium;
+  cursor: pointer;
+  transition: all 100ms ease-in-out;
+}
+
+.welcome_container_button:hover {
+  transform: scale(99%);
+}
+
+.login_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.login_title {
+  color: #fff;
+  font-family: Gotham Medium;
+}
+
+.form_login_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.login_input {
+  padding: 15px 10px;
+  margin: 2.5% 0;
+  border-radius: 4px;
+  border: 1px solid	#6d7678;
+  background: transparent;
+  color: #fff;
+  font-family: Gotham light;
+  font-weight: 400;
+}
+
+.login_input:focus {
+  outline: none;
+}
+
+.login_button {
+  margin: 2.5% 0;
+  width: 100%;
+  padding: 15px 0;
+  border-radius: 4px;
+  border: none;
+  background: #57756d;
+  color: #fff;
+  font-family: Gotham Medium;
+  cursor: pointer;
+  transition: all 100ms ease-in-out;
+}
+
+.third_party_auth {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 15px 0;
+}
+
+.google_auth_img,
+.apple_auth_img {
+  cursor: pointer;
+  background: #57756d;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.other  {
+  color: #fff;
+  font-family: Gotham light;
+}
+
+.other a {
+  color: #a6c2a5;
+  font-family: Gotham light;
+}
+
+.app-res-menu {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  display: none;
+  z-index: 100;
+  }
+
+.res-menu-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 25px;
+}
+
+.res-menu-nav h1 {
+  color: #000;
+  font-family: "PP Telegraf";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.res-menu-nav svg {
+  cursor: pointer;
+}
+
+.app-res-menu-links {
+  padding: 0 25px;
+}
+
+.app-res-menu-links a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #000;
+  font-family: "PP Telegraf";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+  padding: 25px 0;
+}
+
+.app-res-menu-links svg {
+  width: 25px;
+  height: 25px;
+}
+
+.logout-button-div {
+  position: absolute;
+  bottom: 55px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logout-button:hover {
+  transform: translateY(-6%);
+}
+
+.logout-button {
+  padding: 15px 135px;
+  border-radius: 8px;
+  background: #57756d;
+  color: #fff;
+  font-family: "PP Telegraf";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: none;
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+}
+
+.feil {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 4px;
+  padding: 20px 10px;
+  margin: 0 0 5% 0;
+  color: #fff;
+  font-family: Gotham-light;
+  background-color: #ff0f0f;
+}
+
+.back-arrow {
+  position: fixed;
+  top: 50px;
+  left: 20px;
+  rotate: 180deg;
+}
+
+.back-arrow:hover {
+  transform: translateY(5%);
+}
+
+.intro {
+  padding: 0 25px;
+}
+
+.Intro-text {
+  color: #fff;
+  font-family: Gotham-light;
+}
+
+.intro-info {
+  color: #fff;
+  font-family: Gotham-light;
+  max-width: 400px;
+}
+
+.info-images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5% 0;
+}
+
+.info-planets {
+  width: clamp(50%, 100px, 100%);
+}
+
+.next-button {
+  width: 100%;
+  padding: 15px 0;
+  border-radius: 4px;
+  border: none;
+  background: #b2c0db;
+  color: #333;
+  font-family: Gotham light;
+  cursor: pointer;
+  transition: all 100ms ease-in-out;
+}
+
+.next-button:hover {
+  transform: scale(99%);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.login-form input {
+  padding: 15px 10px;
+  margin: 2.5% 0;
+  border-radius: 4px;
+  border: 1px solid #ffffff;
+  background: transparent;
+  color: #fff;
+  font-family: Gotham-light;
+  font-weight: 400;
+}
+
+.login-form input:focus {
+  outline: none;
+}
+
+.submit-button {
+  margin: 2.5% 0;
+  width: 100%;
+  padding: 15px 0;
+  border-radius: 4px;
+  border: none;
+  background: #b2c0db;
+  color: #333;
+  font-family: Gotham light;
+  cursor: pointer;
+  transition: all 100ms ease-in-out;
+}
+
+
+.app-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 25px 10px 25px; /* top right bottom left */
+}
+
+.app-nav h1 {
+  color: #fff;
+  font-family: Gotham light;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.app-nav svg {
+  cursor: pointer;
+}
+
+.app-search-bar {
+  padding: 0 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app-search-bar i {
+  font-size: 25px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.app-search-bar input {
+  width: 100%;
+  max-width: 280px;
+  height: 28px;
+  flex-shrink: 0;
+  padding: 10px 5px;
+  border-radius: 8px;
+  border: none;
+  font-family: Gotham light;
+  color: #333;
+}
+
+.app-search-bar input:focus {
+  outline: none;
+}
+
+.reset-password-container {
+  padding: 100px 20px 10px 20px;
+}
+
+.reset-password-container h1 {
+  font-family: Gotham light;
+  color: #fff;
+}
+
+.reset-password-container p {
+  font-family: Gotham light;
+  color: #fff;
+}
+
+.reset-input-container {
+  display: flex;
+  justify-content: center;
+  padding: 5px 20px;
+}
+
+.reset-input-container input {
+  width: 100%;
+  padding: 20px 10px;
+  background: #c9c8c8;
+  border-radius: 4px;
+  border: none;
+  color: #333;
+  font-size: 15px;
+  font-family: Gotham-light;
+  font-weight: 400;
+}
+
+.reset-input-container input:focus {
+  outline: none;
+}
+
+.reset-button-container {
+  padding: 10px 20px;
+}
+
+.reset-button-container button {
+  width: 100%;
+  padding: 15px;
+  border-radius: 4px;
+  background: #b2c0db;
+  border: none;
+  font-family: Gotham light;
+  font-size: 15px;
+  color: #333;
+  cursor: pointer;
+}
+
+.weather-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+}
+
+.weather {
+  padding: 0 25px;
+  text-align: center;
+}
+
+.weather h1 {
+  font-size: 90px;
+  font-size: clamp(90px, 15vw, 125px);
+  color: #fff;
+  font-family: Gotham light;
+  margin-bottom: -5%;
+}
+
+.weather h2 {
+  color: #fff;
+  font-family: Gotham light;
+}
+
+.details {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 100px 0;
+  border-radius: 25px 25px 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 25px;
+}
+
+.col img {
+  width: 50px;
+  height: 50px;
+}
+
+.col-info p {
+  margin: 0;
+  font-family: Gotham light;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Skykima</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <div class="login_container">
+      <form action="{{ url_for('login') }}" method="post">
+        <div class="form_login_container">
+          <h1 class="login_title">Login</h1>
+          <input
+            class="login_input"
+            type="text"
+            placeholder="Username"
+            required
+            name="username"
+          />
+          <input
+            class="login_input"
+            type="password"
+            placeholder="Password"
+            required
+            name="password"
+          />
+          <button type="submit" class="login_button">Login</button>
+          <div class="third_party_auth">
+            <img
+              class="google_auth_img"
+              src="{{url_for('static', filename='images/Vector-1.png') }}"
+              alt=""
+            />
+            <img
+              class="apple_auth_img"
+              src="{{url_for('static', filename='images/Vector.png') }}"
+              alt=""
+            />
+          </div>
+          <p class="other">
+            or Signup <a href="{{ url_for('signUp') }}">Here</a>
+            if you want an account
+          </p>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
