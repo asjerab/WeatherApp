@@ -5,8 +5,8 @@ app = Flask(__name__)
 app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
 
 # Database configuration
-host = "10.2.2.223"
-user = "root"
+host = "10.2.1.218"
+user = "asjer"
 password = "myPass"
 database = "weatherapp"
 
@@ -35,6 +35,10 @@ def login():
 @app.route('/signUp')
 def signUp():
     return render_template('signUp.html')
+
+@app.route('/FAQ')
+def FAQ():
+    return render_template('FAQ.html')
 
 @app.route('/application')
 def app_function():

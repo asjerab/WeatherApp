@@ -11,7 +11,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #414a4c;
+  background-color: #023047;
 }
 
 .welcome_container {
@@ -34,8 +34,8 @@ body {
   cursor: pointer;
   border-radius: 4px;
   border: none;
-  background: #57756d;
-  color: #fff;
+  background: #fff;
+  color: #000;
   font-family: Gotham Medium;
   cursor: pointer;
   transition: all 100ms ease-in-out;
@@ -67,7 +67,7 @@ body {
   padding: 15px 10px;
   margin: 2.5% 0;
   border-radius: 4px;
-  border: 1px solid	#6d7678;
+  border: 1px solid #ffffff;
   background: transparent;
   color: #fff;
   font-family: Gotham light;
@@ -84,8 +84,8 @@ body {
   padding: 15px 0;
   border-radius: 4px;
   border: none;
-  background: #57756d;
-  color: #fff;
+  background: #fff;
+  color: #000;
   font-family: Gotham Medium;
   cursor: pointer;
   transition: all 100ms ease-in-out;
@@ -101,18 +101,18 @@ body {
 .google_auth_img,
 .apple_auth_img {
   cursor: pointer;
-  background: #57756d;
+  background: #128fd2;
   padding: 20px;
   border-radius: 4px;
 }
 
-.other  {
+.other {
   color: #fff;
   font-family: Gotham light;
 }
 
 .other a {
-  color: #a6c2a5;
+  color: #128fd2;
   font-family: Gotham light;
 }
 
@@ -123,7 +123,7 @@ body {
   background-color: #fff;
   display: none;
   z-index: 100;
-  }
+}
 
 .res-menu-nav {
   display: flex;
@@ -143,6 +143,8 @@ body {
 
 .res-menu-nav svg {
   cursor: pointer;
+  height: 35px;
+  color: #000;
 }
 
 .app-res-menu-links {
@@ -182,7 +184,7 @@ body {
 .logout-button {
   padding: 15px 135px;
   border-radius: 8px;
-  background: #57756d;
+  background: #023047;
   color: #fff;
   font-family: "PP Telegraf";
   font-size: 22px;
@@ -293,7 +295,6 @@ body {
   transition: all 100ms ease-in-out;
 }
 
-
 .app-nav {
   display: flex;
   justify-content: space-between;
@@ -304,7 +305,7 @@ body {
 .app-nav h1 {
   color: #fff;
   font-family: Gotham light;
-  font-size: 22px;
+  font-size: 27px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -312,6 +313,8 @@ body {
 
 .app-nav svg {
   cursor: pointer;
+  height: 35px;
+  color: #fff;
 }
 
 .app-search-bar {
@@ -329,18 +332,26 @@ body {
 
 .app-search-bar input {
   width: 100%;
-  max-width: 280px;
+  max-width: 250px;
   height: 28px;
   flex-shrink: 0;
-  padding: 10px 5px;
-  border-radius: 8px;
+  padding: 10px 15px;
+  border-radius: 4px;
   border: none;
   font-family: Gotham light;
-  color: #333;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
 }
 
 .app-search-bar input:focus {
   outline: none;
+}
+
+.app-search-bar svg {
+  height: 35px;
+  color: #fff;
+  cursor: pointer;
 }
 
 .reset-password-container {
@@ -425,7 +436,7 @@ body {
   bottom: 0;
   width: 100%;
   background-color: #fff;
-  padding: 100px 0;
+  padding: 75px 0;
   border-radius: 25px 25px 0 0;
   display: flex;
   justify-content: space-between;
@@ -446,4 +457,39 @@ body {
 .col-info p {
   margin: 0;
   font-family: Gotham light;
+}
+
+.faq-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px;
+  background-color: #023047;
+}
+
+.faq-header h1 {
+  font-family: Gotham light;
+  color: #fff;
+  font-size: 20px;
+}
+
+.faq-header svg {
+  color: #fff;
+  height: 25px;
+  cursor: pointer;
+}
+
+.faq-content {
+  padding-top: 35px;
+  padding-left: 25px;
+  font-family: Gotham light;
+}
+
+.faq-content h1 {
+  font-family: Gotham light;
+}
+
+.faq-content table {
+  display: flex;
+  flex-direction: column;
 }

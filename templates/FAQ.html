@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='script.js') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <script
+      src="https://kit.fontawesome.com/ced2e054c6.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>FAQ</title>
+  </head>
+  <body style="background-color: #fff">
+    <div class="faq-header">
+      <h1>FAQ</h1>
+      <a href="/application">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 19.5 8.25 12l7.5-7.5"
+          />
+        </svg>
+      </a>
+    </div>
+
+    <div class="faq-content">
+      <h1>Generelle spørsmål</h1>
+      <p>
+        <strong>Hva er produktet </strong>
+        <br>
+        <br>
+        Dette er en simpel vær app hvor du kan søke opp byer i verden og finne
+        ut av hvor varmt eller kaldt det er der nå.
+      </p>
+      <p>
+        <strong>Hvordan fungerer det </strong>
+        <br>
+        <br>
+        Den fungere slik hvor du søker på en by i søkefeltet og trykker på søke
+        inkonet for og hente ut informasjonen.
+      </p>
+      <p>
+        <strong>Hvordan bruke programmet </strong>
+        <br>
+        <br>
+        Du starter med og lage en bruker eller logge inn hvis du allerede har en
+        bruker, Når du lager en bruker hos weatherapp lagrer vi kun info som
+        brukernavn, passord og om brukeren er en admin bruker eller ikke.
+      </p>
+      <p>
+        <strong>Hvilke nettlesere eller enheter støttes </strong>
+        <br>
+        <br>
+        Alle enheter og nettlesere støttes .
+      </p>
+      <p></p>
+    </div>
+  </body>
+</html>
